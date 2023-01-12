@@ -5,22 +5,22 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #470024   ;
-  --secondary-color: #251101 ;
-  --accent1-color: #5B1865;
-  --accent2-color: #2C5784;
+  --primary-color: #FF9B42   ;
+  --secondary-color: #0FA3B1 ;
+  --accent1-color: #D9E5D6;
+  --accent2-color: #EDDEA4;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Comfortaa";
   --paragraph-font: Fjalla One;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #470024;  /* headlines on a white background */ 
-  --headline-color-on-color: #5688C7; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #470024; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #5688C7; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #5B1865  ;
-  --nav-link-color: #5688C7;
+  --headline-color-on-white: #0FA3B1;  /* headlines on a white background */ 
+  --headline-color-on-color: #EDDEA4; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #FF9B42; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #D9E5D6; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #0FA3B1  ;
+  --nav-link-color: #F7A072;
   --nav-background-color: #5688C7;
   --nav-hover-link-color: #5688C7;
   --nav-hover-background-color: #5688C7;
