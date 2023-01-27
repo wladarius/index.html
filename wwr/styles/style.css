@@ -1,0 +1,132 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #D9E5D6;
+    text-align: center; 
+}
+#hero-msg h1, #hero-msg h4 { 
+    text-align: center; 
+    
+}
+
+.button-box {
+    text-align: center; 
+
+}
+main section {
+    text-align: center; 
+}
+
+#content * {
+    width: 100%;
+}
+
+#background {
+    height: 725px;
+}
+
+body {
+    background-color:white;
+}
+
+header {
+    background-color: #0FA3B1;
+}
+
+nav a:hover {
+    color:black;
+    background-color: #D9E5D6;
+}
+
+.book, .join {
+    text-decoration: none;
+    color: #0FA3B1;
+    background-color:white;
+}
+
+
+
+.book:hover, .join:hover {
+    color: #D9E5D6;
+    background-color: black;
+}
+
+
+#background {
+    background-color: #D9E5D6;
+}
+
+.msg {
+
+    background-color: #0FA3B1;
+}
+
+footer {
+    font-size: 1.2em;
+    color: #0FA3B1;
+    background-color: #D9E5D6;
+}
+
+.home-title {
+    color: black;
+}
+
+h4 {
+    color: #FF9B42;
+}
+
+.msg h2 {
+    color: #EDDEA4;
+}
+
+.msg p {
+    color: #EDDEA4;
+}
+footer a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #0FA3B1;
+}
+footer a:hover {
+
+    color: #FF9B42;
+}
+
+.icon{
+    max-width: 80px;
+    max-height: 80px;
+}
+.logo{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+#hero-img{
+    max-width: 100%
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+img{
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.social{
+    display: inline-block;
+    padding: 5px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
