@@ -30,12 +30,12 @@ main section {
     text-align: center; 
 }
 
-#content * {
-    width: 100%;
-}
+
 
 #background {
     height: 725px;
+    grid-column: 1/ sapn 11;
+    grid-row: 4/ sapn 9; 
 
 }
 
@@ -45,6 +45,8 @@ body {
 
 header {
     background-color: #0FA3B1;
+    display: grid;
+    grid-template-columns: 150px auto;
 
 }
 
@@ -70,21 +72,23 @@ nav a:hover {
 
 .book:hover, .join:hover {
     font-family: Comfortaa, Fjalla One, Itim;
-    color: #D9E5D6;
-    background-color: black;
+    color: #000;
+    background-color: #FF9B42;
 }
 
 
 #background {
     background-color: #D9E5D6;
-    margin-top: 200px;
+
 }
 
 .msg {
     line-height: 1.5em;
     background-color: #0FA3B1;
     padding: 35px;
-    margin-top: 200px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #000;
 }
 
 footer {
@@ -92,16 +96,21 @@ footer {
     color: #0FA3B1;
     background-color: #D9E5D6;
     margin-top: 200px;
-    padding: 25px 50px
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
 .home-title {
-    color: black;
+    color: #D9E5D6;
     font-family:Comfortaa, Fjalla One, Itim;
     font-size: 2em;
     margin-top: 10px;
 }
+
+
 
 h4 {
     color: #FF9B42;
@@ -142,7 +151,9 @@ footer a:hover {
 
 #hero-img{
     max-width: 100%;
-    margin-top: 0;
+    max-height: 100%;
+    width:100%;
+
 
 
 }
@@ -154,12 +165,6 @@ footer p a:hover{
 
 footer p{
     font-size: 1.2em;
-}
-
-img{
-    max-width: 40%;
-    max-height: 40%;
-    margin-top: 100px;
 }
 
 .social{
@@ -186,6 +191,8 @@ h2{
 
 #logo_link{
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 footer .social img{
@@ -195,17 +202,129 @@ footer .social img{
     max-height: 25%;
 }
 
-.rivers-card .camping-card, .rapids-cards{
+.rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
+    width: 100%;
 }
 
 .card-img{
     border: 10px solid #d9c2a3;
-    margin-top: 200px;
-    max-width: 25%;
-    max-height: 25%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #000;
 }
 
 main section img{
     box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+
+
+#hero-msg h4 {
+    color: white;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.card-img, .mountains {
+    width: 100%;
+    display: block;
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3
+}
+
+.rapids-card {
+    grid-column: 8/10; 
+    grid-row: 2/3;   
+}
+
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    width: 100%;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
