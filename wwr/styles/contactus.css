@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fjalla+One&family=Itim&display=swap');
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    font-size: 19px;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+    
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+
+nav a {
+    font-family: Comfortaa, Fjalla One, Itim;
+    text-decoration: none;
+    color: #D9E5D6;
+    text-align: center; 
+    padding: 35px;
+}
+#hero-msg h1, #hero-msg h4 { 
+    font-family: Comfortaa, Fjalla One, Itim;
+    text-align: center; 
+    
+}
+
+.button-box {
+    font-family: Comfortaa, Fjalla One, Itim;
+    text-align: center; 
+
+}
+main section {
+    font-family: Comfortaa, Fjalla One, Itim;
+    text-align: center; 
+}
+
+
+
+#background {
+    height: 725px;
+    grid-column: 1/ sapn 11;
+    grid-row: 4/ sapn 9; 
+
+}
+
+body {
+    background-color:white;
+}
+
+header {
+    background-color: #0FA3B1;
+    display: grid;
+    grid-template-columns: 150px auto;
+
+}
+
+nav a:hover {
+    font-family: Comfortaa, Fjalla One, Itim;
+    color:black;
+    background-color: #D9E5D6;
+}
+
+.book, .join {
+    font-family: Comfortaa, Fjalla One, Itim;
+    text-decoration: none;
+    color: #0FA3B1;
+    background-color:white;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.book:hover, .join:hover {
+    font-family: Comfortaa, Fjalla One, Itim;
+    color: #000;
+    background-color: #FF9B42;
+}
+
+
+#background {
+    background-color: #D9E5D6;
+
+}
+
+.msg {
+    line-height: 1.5em;
+    background-color: #0FA3B1;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #000;
+}
+
+footer {
+    font-family: Comfortaa, Fjalla One, Itim;
+    color: #0FA3B1;
+    background-color: #D9E5D6;
+    margin-top: 200px;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home-title {
+    color: #FF9B42;
+    font-family:Comfortaa, Fjalla One, Itim;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+h4 {
+    color: #FF9B42;
+}
+
+.msg h2 {
+    color: #EDDEA4;
+    font-family: Comfortaa, Fjalla One, Itim;
+}
+
+.msg p {
+    font-family: Comfortaa, Fjalla One, itim;
+    color: #EDDEA4;
+    font-size: .8em;
+    padding-bottom: 15px;
+    
+}
+footer a {
+    font-family: Comfortaa, Fjalla One, Itim;
+    text-decoration: none;
+    color: #0FA3B1;
+}
+footer a:hover {
+    font-family: Comfortaa, Fjalla One, Itim;
+    color: #FF9B42;
+}
+
+.icon{
+    max-width: 80px;
+    max-height: 80px;
+    padding-top: 10px;
+}
+.logo{
+    max-width: 80px;
+    max-height: 80px;
+    margin-top: 0;
+}
+
+#hero-img{
+    max-width: 100%;
+    max-height: 100%;
+    width:100%;
+
+
+
+}
+
+footer p a:hover{
+    text-decoration: underline;
+    font-family: Comfortaa, Fjalla One, Itim;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+.social{
+    display: inline-block;
+    padding: 5px;
+    max-width: 150px;
+    max-height: 150px;
+}
+ body{
+    font-family: Comfortaa, Fjalla One, Itim;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+ }
+
+.headline{
+    font-family: Comfortaa, Fjalla One, Itim;
+}
+
+
+h2{
+    margin: 0;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+footer .social img{
+    padding-top: 15px;
+    margin-top: 0px;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+    width: 100%;
+}
+
+.card-img{
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #000;
+}
+
+main section img{
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+
+
+#hero-msg h4 {
+    color: white;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
