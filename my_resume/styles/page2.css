@@ -13,6 +13,7 @@ nav a {
     color: #1E2019;
     text-align: center; 
     padding: 35px;
+
 }
 #hero-msg h1, #hero-msg h4 { 
     font-family: "Josefin Sans";
@@ -40,8 +41,8 @@ body {
     background-color:white;
 }
 
-header {
-    padding: 10px 16px;
+.header {
+
     background-color: #FFC1CF;
     display: grid;
     grid-template-columns: 150px auto;
@@ -265,18 +266,22 @@ h4{
 
 * {box-sizing: border-box;}
 
-.content {
-    padding: 16px;
-  }
+
   
   /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+.sticky + .content {
     padding-top: 102px;
+  }
+
+
+
+.content {
+    padding: 16px;
   }
